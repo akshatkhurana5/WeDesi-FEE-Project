@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #collage {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .collage-item {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .collage-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .upload {
+      text-align: center;
+      margin: 80px;
+    }
+
+    .upload input {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .upload button {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      padding: 8px;
+      border-radius: 10px;
+      border: 1px solid black;
+      transition: all 0.48s ease-in-out;
+      background-color: #fff;
+    }
+    .upload button:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+      background-color: #f1f1f1;
+      background-color: #181818;
+      color:#fff;
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <a href="./homepage.html"><img id="logo" src="https://cdn.dribbble.com/users/2724922/screenshots/5535565/logo.png"
+              alt=""></a>
+        </div>
+        <ul class="navbar-menu">
+          <li><a href="#" id="login">Log In</a></li>
+          <li><a href="#" id="signin">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="where">
+      <h1 class="where_h"><b>Your Memories</b></h1>
+      <ul class="where_menu">
+        <li>
+          <h4><a href="homepage.html">Search All</a></h4>
+        </li>
+        <li>
+          <h4><a href="hotels.html">Hotels</a></h4>
+        </li>
+        <li>
+          <h4><a href="main.html">Restaurants</a></h4>
+        </li>
+        <li>
+          <h4><a href="">Holiday Homes</a></h4>
+        </li>
+        <li>
+          <h4><a href="memories.html">Memories</a></h4>
+        </li>
+      </ul>
+      <div class="srch">
+        <div class="srch1">
+          <select name="" id="">
+            <option value="">City 1</option>
+            <option value="">City 2</option>
+          </select>
+          &#124 &nbsp;
+          <i class="fa fa-search" style="font-size:17px"></i>&nbsp;&nbsp;
+          <input type="text" placeholder="Type here">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upload">
+    <input type="file" id="imageUpload" multiple>
+    <button id="clearImages">Clear All Photos</button>
+    <div id="collage"></div>
+  </section>
+
+  <div id="full">
+    <div id="loginpage">
+      <div class="toplogin">
+        <img src="https://cdn.dribbble.com/users/2724922/screenshots/5535565/logo.png" width="50" height="50" alt="">
+        <div class="keylogin">Welcome back.</div>
+        <i id="cross1" class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <section class="inloginpage">
+        <form target="try/try.html" class="loginform" name="loginform">
+          Email address
+          <div class="signinpage_input">
+            <input type="email" id="email" placeholder="E-mail" name="email" required>
+          </div>
+          Password
+          <div class="signinpage_input">
+            <input type="password" placeholder="password" name="passwd" required>
+          </div>
+          <button class="btn otplogin" onclick="sendOTP()">Log In</button>
+        </form>
+        <div class="loginor">or</div>
+        <div class="emaillogin"><button><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;Sign in with
+            Google</button></div>
+      </section><br><br>
+      <span>New to WeDesi?</span>
+      <span id="tosignin">Create Account</span>
+    </div>
+
+    <div id="signinpage">
+      <div class="signinpage_top">
+        <img src="https://cdn.dribbble.com/users/2724922/screenshots/5535565/logo.png" width="50" height="50" alt="">
+        <div>Sign Up</div>
+        <i id="cross2" class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <form action="#" class="signupform" name="signupform">
+        Username
+        <div class="signinpage_input">
+          <input type="text" placeholder="Username" name="uname" required>
+        </div>
+        Email address
+        <div class="signinpage_input">
+          <input type="email" placeholder="E-mail" name="email" required>
+        </div>
+        Password
+        <div class="signinpage_input">
+          <input type="password" placeholder="password" name="passwd" required>
+        </div>
+        <div class="signinpage_input"> <button>Submit</button> </div>
+      </form>
+      <div class="loginor">or</div>
+      <div class="emaillogin"><button>&nbsp;Sign Up with Google</button></div>
+      <div class="emaillogin"><button> &nbsp;<i class="fa fa-apple" style="font-size:24px"></i>Sign Up with Apple
+          ID</button></div>
+    </div>
+  </div>
+
+  <footer class="copyright">
+    <div class="foot1">
+      <div class="foot1-icon">
+        <img class="f1-icon" src="https://cdn.dribbble.com/users/2724922/screenshots/5535565/logo.png" alt="WeDesi" />
+      </div>
+
+      <div class="foot1-menu">
+        <div class="foot1-countries">
+          <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="uae">UAE</option>
+          </select>
+        </div>
+        <div class="foot1-language">
+          <select name="language" id="language">
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot2">
+      <div class="foot2-about">
+        <div class="f2-about-head">ABOUT WeDesi</div>
+        <div class="f2-about-links">
+          <a href="#">Who We Are</a>
+          <a href="#">Blog</a>
+          <a href="#">Work With Us</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Report Fraud</a>
+          <a href="#">Press Kit</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="foot2-zomaverse">
+        <div class="f2-zomaverse-head">ZOMAVERSE</div>
+        <div class="f2-zomaverse-links">
+          <a href="#">WeDesi</a>
+          <a href="#">Blinkit</a>
+          <a href="#">Feeding India</a>
+          <a href="#">Hyperpure</a>
+          <a href="#">Zomaland</a>
+        </div>
+      </div>
+
+      <div class="foot2-res-enter">
+        <div class="f2-restaurant">
+          <div class="f2-restaurant-head">FOR RESTAURANTS</div>
+          <div class="f2-restaurant-links">
+            <a href="#">Partner With Us</a>
+            <a href="#">Apps For You</a>
+          </div>
+        </div>
+        <div class="f2-enterprise">
+          <div class="f2-enterprise-head">For Enterprises</div>
+          <div class="f2-enterprise-links">
+            <a href="#">WeDesi For Enterprise</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot2-learn-more">
+        <div class="f2-learn-head">LEARN MORE</div>
+        <div class="f2-learn-links">
+          <a href="#">Privacy</a>
+          <a href="#">Security</a>
+          <a href="#">Terms</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+
+      <div class="foot2-social">
+        <div class="f2-social-head">SOCIAL LINKS</div>
+        <div class="f2-social-icons">
+          <i class="fa-brands fa-linkedin" style="color: #000000"></i>
+          <i class="fa-brands fa-square-instagram" style="color: #000000"></i>
+          <i class="fa-brands fa-twitter" style="color: #000000"></i>
+          <i class="fa-brands fa-youtube" style="color: #000000"></i>
+          <i class="fa-brands fa-facebook" style="color: #000000"></i>
+        </div>
+      </div>
+    </div>
+
+    <div style="
+            border: 0.5px solid rgb(158, 158, 158);
+            margin: 3rem 13.5rem 0 13.5rem;
+          "></div>
+
+    <div class="foot3">
+      By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content
+      Policies. All trademarks are properties of their respective owners. 2008-2024 © WeDesi™ Ltd. All rights reserved.
+    </div>
+
+  </footer>
+
+  <script>
+    document.getElementById('imageUpload').addEventListener('change', handleImageUpload);
+    document.getElementById('clearImages').addEventListener('click', clearAllImages);
+
+    function handleImageUpload(event) {
+      const files = event.target.files;
+
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          const imageSrc = e.target.result;
+
+          // Save to local storage
+          saveImageToLocalStorage(imageSrc);
+
+          // Display image
+          displayImage(imageSrc);
+        };
+
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function saveImageToLocalStorage(imageSrc) {
+      let images = JSON.parse(localStorage.getItem('images')) || [];
+      images.push(imageSrc);
+      localStorage.setItem('images', JSON.stringify(images));
+    }
+
+    function displayImage(imageSrc) {
+      const collageContainer = document.getElementById('collage');
+      const img = document.createElement('img');
+      img.src = imageSrc;
+      img.className = 'collage-item';
+      collageContainer.appendChild(img);
+    }
+
+    function loadImagesFromLocalStorage() {
+      const images = JSON.parse(localStorage.getItem('images')) || [];
+      images.forEach(imageSrc => {
+        displayImage(imageSrc);
+      });
+    }
+
+    function clearAllImages() {
+      // Clear images from local storage
+      localStorage.removeItem('images');
+
+      // Clear images from display
+      const collageContainer = document.getElementById('collage');
+      collageContainer.innerHTML = '';
+    }
+
+    // Load images from local storage when the page loads
+    window.onload = loadImagesFromLocalStorage;
+  </script>
+</body>
+
+</html>

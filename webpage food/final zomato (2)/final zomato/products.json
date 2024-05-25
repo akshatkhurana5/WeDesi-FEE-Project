@@ -1,0 +1,102 @@
+[
+    {
+        "id":1,
+        "name":"Noodles",
+        "price":150,
+        "image":"images/1one.jpg"
+    },
+    {
+        "id":2,
+        "name":"Pancakes",
+        "price":250,
+        "image":"images/two.jpg"
+    },
+    {
+        "id":3,
+        "name":"Chole Bhature",
+        "price":170,
+        "image":"images/fifteen.jpeg"
+    },
+    {
+        "id":4,
+        "name":"Panner Butter Masala",
+        "price":199,
+        "image":"images/fourteen.jpeg"
+    },
+
+    {
+        "id":5,
+        "name":"Masala Rava Toast",
+        "price":90,
+        "image":"images/five.jpg"
+    },
+    {
+        "id":6,
+        "name":"Lollipops",
+        "price":120,
+        "image":"images/six.jpeg"
+    },
+    {
+        "id":7,
+        "name":"Masala Dosa",
+        "price":150,
+        "image":"images/1seven.jpg"
+    },
+    {
+        "id":8,
+        "name":"Red Sauce Pasta",
+        "price":70,
+        "image":"images/1eight.jpg"
+    },
+
+    {
+        "id":9,
+        "name":"Fries & Burger",
+        "price":70,
+        "image":"images/nine.jpeg"
+    },
+    {
+        "id":10,
+        "name":"Chicken Pops",
+        "price":200,
+        "image":"images/ten.jpeg"
+    },
+    {
+        "id":11,
+        "name":"Pasta",
+        "price":150,
+        "image":"images/eleven.jpeg"
+    },
+    {
+        "id":12,
+        "name":"Pizza",
+        "price":180,
+        "image":"images/twelve.jpg"
+    },
+
+
+    {
+        "id":13,
+        "name":"Dal Makhni",
+        "price":200,
+        "image":"images/thirteen.jpg"
+    },
+    {
+        "id":14,
+        "name":"Chowmein",
+        "price":170,
+        "image":"images/1one.jpg"
+    },
+    {
+        "id":15,
+        "name":"Indian Thalli",
+        "price":150,
+        "image":"images/fifteen.jpeg"
+    },
+    {
+        "id":16,
+        "name":"Manchurian",
+        "price":90,
+        "image":"images/fourteen.jpeg"
+    }
+]
